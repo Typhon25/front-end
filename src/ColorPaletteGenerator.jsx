@@ -105,7 +105,7 @@ function ColorPaletteGenerator() {
 
   const generatePalette = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/generate-palette', {
+      const response = await axios.post('https://back-end-lovat-six.vercel.app', {
         baseColor
       });
       setPalette(response.data.palette);
